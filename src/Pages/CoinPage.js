@@ -50,24 +50,27 @@ const CoinPage = () => {
       fontFamily: "Montserrat",
     },
     description: {
-      padding: 0,
-      margin: 0
+      padding: "0px",
+      margin: "0px",
     },
     container_lowerThird: {
       display: "flex",
       width: "100%",
       height: "35px", 
-      alignItems: "center"
+      alignItems: "center",
+      padding: "30px 0px 0px 535px"
     },
     text: {
-      width: "162px",
-      padding: "8px",
-      fontWeight: "bold",
-      fontSize: "20px"
+      width: "190px",
+      padding: "10px",
+      fontWeight: "600",
+      fontSize: "20px",
+      borderRight: "6px solid gold",
+      height: "34px"
     },
     box: {
       display: "inline",
-      padding: "0px 40px"
+      padding: "0px 40px",
     },
     date: {
       display: "inline",
