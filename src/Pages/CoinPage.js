@@ -50,12 +50,29 @@ const CoinPage = () => {
       fontFamily: "Montserrat",
     },
     description: {
+      padding: 0,
+      margin: 0
+    },
+    container_lowerThird: {
+      display: "flex",
       width: "100%",
-      fontFamily: "Montserrat",
-      padding: 25,
-      paddingBottom: 15,
-      paddingTop: 0,
-      textAlign: "justify",
+      height: "35px", 
+      alignItems: "center"
+    },
+    text: {
+      width: "162px",
+      padding: "8px",
+      fontWeight: "bold",
+      fontSize: "20px"
+    },
+    box: {
+      display: "inline",
+      padding: "0px 40px"
+    },
+    date: {
+      display: "inline",
+      color: "rgba(250, 250, 250, 0.8)", 
+      margin: "0px 6px"
     },
     marketData: {
       alignSelf: "start",
@@ -81,6 +98,7 @@ const CoinPage = () => {
   if (!coin) return <LinearProgress style={{ backgroundColor: "gold" }} />;
 
   return (
+    <div className={classes.description}>
     <div className={classes.container}>
       <div className={classes.sidebar}>
         <img
@@ -151,6 +169,28 @@ const CoinPage = () => {
         </div> */}
       </div>
       <CoinInfo coin={coin} />
+    </div>
+    <div class={classes.container_lowerThird}>
+      <span class={classes.text}>Breaking News</span>
+      <marquee behavior="" direction="left">
+
+        <div class={classes.box}>
+          <p class={classes.date}>17 Jan 2022</p>
+          <a href="#">create saushua kflçdlfçd fsdag</a>
+        </div>
+
+        <div class={classes.box}>
+          <p class={classes.date}>17 Jan 2022</p>
+          <a href="#">create saushua kflçdlfçd fsdag</a>
+        </div>
+
+        <div class={classes.box}>
+          <p class={classes.date}>17 Jan 2022</p>
+          <a href="#">create saushua kflçdlfçd fsdag</a>
+        </div>
+
+      </marquee>
+    </div>
     </div>
   );
 };

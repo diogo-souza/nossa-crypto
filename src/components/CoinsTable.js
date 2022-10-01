@@ -82,7 +82,7 @@ export default function CoinsTable() {
         coin.symbol.toLowerCase().includes(search)
     );
   };
-//aloowfdffdfdfd
+
   return (
     <ThemeProvider theme={darkTheme}>
       <Container style={{ textAlign: "center" }}>
