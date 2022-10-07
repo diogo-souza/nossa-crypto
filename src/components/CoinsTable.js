@@ -90,7 +90,7 @@ export default function CoinsTable() {
           variant="h4"
           style={{ margin: 18, fontFamily: "Montserrat" }}
         >
-          Cryptocurrency Prices by Market Cap
+          Preços de Criptomoeda por Capitalização de Mercado
         </Typography>
         <TextField
           label="Procure por uma Criptomoeda..."
